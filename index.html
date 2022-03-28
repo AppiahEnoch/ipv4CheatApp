@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AECleanCodes</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>IPV4 CHEAT APP</h1>
+    <div class="container">
+      <div >
+        <div class="divinput">
+          <h4>ENTER IP ADDRESS HERE</h4>
+
+          <input placeholder="eg: 192.125.201.1" name="tf1" 
+          id="addressID" type="text" onkeyup="show()" />
+
+
+<div class="specificInput">
+
+  <h4>
+    NUMBER OF HOST <br />
+    BITS BORROWED
+  </h4>
+  <input 
+    name="tfh"
+    id="hostBitBorrowedID"
+    type="text"
+    onkeyup="calculateSubnet()"
+  />
+  <h4>NUMBER SUBNETS NEEDED</h4>
+  <input
+    name="tfn"
+    id="neededNetworkID"
+    type="text"
+    onkeyup="calculateHostsNeeded()"
+  />
+  <h4>NUMBER OF HOST BITS</h4>
+  <input
+    name="tfn"
+    id="numberOfHostBitID"
+    type="text"
+    onkeyup="calculatePossibleHostFromHostBit()"
+  />
+
+  
+</div>
+
+        
+        </div>
+
+
+        <div class="lbClass">
+          <div class="generalIpv4">
+            <label id="nType"> Type Of IP: </label>
+            <label id="nTypeValue"> IPV4 </label>
+            <br />
+
+            <label id="nTotalIP">
+              Total IP Addresses / <br />
+              <label id="nTotalIP">Addresses Space: </label>
+            </label>
+            <label id="nTotalIPValue"> 4,294,967,296 </label>
+            <br />
+
+            <label id="nTotalIPValueW"> 4.3 Billion </label>
+            <br />
+            <label id="nClass"> Class: </label>
+            <label id="nClassValue"> </label>
+
+            <br />
+          </div>
+
+          <div class="specificResult">
+            <label id="nClass"> Number Of Hosts: </label>
+            <label id="nHostValue"> 10 </label>
+            <br />
+            <label id="nClass">Number Of Subnets: </label>
+            <label id="nSubnetValue"> </label>
+            <br />
+            <label id="nClass">Subnet Mask: </label>
+            <label id="maskID"> </label> <br />
+          </div>
+       </div>
+       
+        <div>
+          <b>&copy;AECleanCodes</b>
+        </div>
+      </div>
+    </div>
+    <script src="myjs.js"></script>
+  </body>
+</html>
