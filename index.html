@@ -22,47 +22,45 @@
   <body>
     <h1>IPV4 CHEAT APP</h1>
     <div class="container">
-      <div >
+      <div>
         <div class="divinput">
           <h4>ENTER IP ADDRESS HERE</h4>
 
-          <input placeholder="eg: 192.125.201.1" name="tf1" 
-          id="addressID" type="text" onkeyup="show()" />
+          <input
+            placeholder="eg: 192.125.201.1"
+            name="tf1"
+            id="addressID"
+            type="text"
+            onkeyup="show()"
+          />
 
-
-<div class="specificInput">
-
-  <h4>
-    NUMBER OF HOST <br />
-    BITS BORROWED
-  </h4>
-  <input 
-    name="tfh"
-    id="hostBitBorrowedID"
-    type="text"
-    onkeyup="calculateSubnet()"
-  />
-  <h4>NUMBER SUBNETS NEEDED</h4>
-  <input
-    name="tfn"
-    id="neededNetworkID"
-    type="text"
-    onkeyup="calculateHostsNeeded()"
-  />
-  <h4>NUMBER OF HOST BITS</h4>
-  <input
-    name="tfn"
-    id="numberOfHostBitID"
-    type="text"
-    onkeyup="calculatePossibleHostFromHostBit()"
-  />
-
-  
-</div>
-
-        
+          <div class="specificInput">
+            <h4>
+              NUMBER OF HOST <br />
+              BITS BORROWED
+            </h4>
+            <input
+              name="tfh"
+              id="hostBitBorrowedID"
+              type="text"
+              onkeyup="calculateSubnet()"
+            />
+            <h4>NUMBER SUBNETS NEEDED</h4>
+            <input
+              name="tfn"
+              id="neededNetworkID"
+              type="text"
+              onkeyup="calculateHostsNeeded()"
+            />
+            <h4>NUMBER OF HOST BITS</h4>
+            <input
+              name="tfn"
+              id="numberOfHostBitID"
+              type="text"
+              onkeyup="calculatePossibleHostFromHostBit()"
+            />
+          </div>
         </div>
-
 
         <div class="lbClass">
           <div class="generalIpv4">
@@ -95,10 +93,10 @@
             <label id="nClass">Subnet Mask: </label>
             <label id="maskID"> </label> <br />
           </div>
-       </div>
-       
-        <div>
-          <b>&copy;AECleanCodes</b>
+        </div>
+
+        <div id="ae">
+          <b>&copy; AECleanCodes</b>
         </div>
       </div>
     </div>
